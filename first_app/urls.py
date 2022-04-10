@@ -6,9 +6,6 @@ from first_app import views
 
 
 urlpatterns = [
-    path('home/',views.home),
-    path('servicios/',views.servicios),
-    path('tienda/',views.tienda,),
-    path('blog/',views.blog),
-    path('contac/',views.contac),
-]   
+    path('index/',views.index),
+  
+]
