@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('first_app.urls')), # se enlasa los urls de la aplicacion  alas urls globales
+   
 ]
