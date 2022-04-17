@@ -1,8 +1,7 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,86 +9,114 @@
 
     
     <link rel="stylesheet" href ="{% static 'first_app/css/index.css' %}">
+    
 
 </head>
 
 <body>
     <header>
         <div class="container">
-            <p class="logo"> mi portafolio </p>
-            <nav>
-                <a href="#">blog</a>
-                <a href="#">about</a>
-                <a href="#">contac</a>
+            <nav class="inicio">
+                <a href="#hero">INICIO</a>
+                <a href="#sobre-mi">SOBRE MI</a>
+                <a href="#nuestros-proyectos">MIS PROYECTOS</a>
+                <a href="#">TECNOLOGIAS</a>
+                <a href="">CONTACTAME</a>
             </nav>
+           
         </div>
     </header>
 
     
-    <section id="hero">
+    <section id="hero" >
         <h1>Tecnicó en Programación de Sofware<br>Programador Web </h1>
         <button>DESACARGA MI CV</button>
+        
     </section>
 
-    <section id="about">
+    <section id="sobre-mi">
         <div class="container">
             <div id="img_conteiner">ruta de la imagen </div>
-
-                <h1> me llamo brayan</h1>
-                <description>
+                <h1> Soy<span class="color-nombre"> Brayan Ramirez</span></h1>
+                <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquam beatae illum ad incidunt eligendi eaque sint reiciendis amet laudantium expedita provident, cum aliquid sit culpa, sapiente porro ea ex.
-                </description>
+                </p>
         </div>
 
     </section>
 
-    <section id=" nuestros projectos">   
+    <section id="nuestros-proyectos">   
         <div class="container">
-            
-            <h1>nuestros projectos de programacion</h1>
-            
-            <div id="projecto1">
-                <h3>algoritmo de trading</h3>
-                <description>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </description>
-                <button>
-                    link githut
-                </button>
+            <h1> PROYECTOS DE PROGRAMACION</h1>
+            <div class="programas">    
+                <div class="carta">
+                    <h3>algoritmo de trading</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                    </p>
+                    <button>
+                        link githut
+                    </button>
 
+                </div>
+                <div class="carta">
+                    <h3>control scolar</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                    </p>
+                    <button>
+                        link githut
+                    </button>
+                </div>
+                    
+                <div class="carta">
+                    <h3>web scraping</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                    </p>
+                    <button>
+                        link githut
+                    </button>
+                </div>
             </div>
-            <div id="projecto2">
-                <h3>control scolar</h3>
-                <description>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </description>
-                <button>
-                    link githut
-                </button>
-            </div>
-                
-            <div id="projecto3">
-                <h3>web scraping</h3>
-                <description>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </description>
-                <button>
-                    link githut
-                </button>
-            </div>
-
         </div>
 
     </section>
+
+
+
+
+    <section id="tegnologias"> 
+        <div class="container">            
+            <h3>TECNOLOGIAS</h3>
+
+            <div class="experiencias">
+
+                <div class="experiencia">
+                    <img src="{% static 'first_app/imagenes/python.png' %}">
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                    <img src="{% static 'first_app/imagenes/css3.png' %}" >
+                </div>
+
+               
+            </div>
+        </div>
+
+    </section>
+
 
     <footer>
         <div class="cotainer">
-
-            <a href="brayanramirez4546@gmail.com">gmail</a>
-
-            <a href="git hut">enlace ami githut</a>
-            <p>&copy;copy brayan</p>
-       
+            <div class="contactame">
+                <a href="brayanramirez4546@gmail.com">Correo</a>
+                <a href="https://github.com/Brianramirez27">github</a>
+                <p>&copy;</p>
+            </div>
 
         </div>
 

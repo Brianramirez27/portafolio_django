@@ -1,75 +1,178 @@
 
+/* modificaciones de toda la pagina web */
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family:Arial;
-    margin: 0;
+
+    margin: 0;   
 }
 
-h1{font-size: 3.5em;}
-h2{font-size: 3.0em;}
-h3{font-size: 2.5em;}
-p{font-size: 2.5em;}
-
-
+/* modificacion de todos los botones de la pagina web */
 button{
     font-size: 1.3em;  
     font-weight: bold;
     padding: 5px 20px;
     border-radius: 15px 15px;
     box-shadow: 3px 3px 3px;
-    color:aliceblue;
-    background-color:rgb(62, 27, 189);
+    color:blanchedalmond;
+    background-color:rgb(91, 8, 168);
 }
 
 button:hover{
-    background-color:rgb(76, 24, 143);
+    background-color:blueviolet;
 }
-
-.container{
-    max-width: 1400px;
-    margin:auto
-      
-} 
-
-header{
-
-background-color: rgb(245, 245 ,245);
-
-}
-
-header .logo {
-    margin: 0%;
-    padding: 25px 30px;
-    font-weight: bold;
-    color:rgb(226, 19, 19) ;
-    font-size: 1.6em;
-    
-}
-
-
+/* modificacion del header o inicio  */
 header .container{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:center;     
 }
 
-header.nav{
+header .inicio{
     display: flex;
-    flex-direction:column ;
-    align-items: center;
-    padding-bottom:25px;
-}
-
-header a{
-    padding: 5px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
+    flex-direction:column;
+    text-align: center;
+    padding-bottom:15px;
    
+}
+
+header .inicio a{
+    padding: 5px ;
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+header a:hover{
+    background-color: blueviolet;
+}
+
+/* modificacion del hero o cv */
+#hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+
+#hero h1{
+    color: white;
+} 
+
+/* modificacion de section sobre mi */
+.color-nombre{ color:blueviolet;}
+
+#sobre-mi {
+   text-align: center;
+   padding: 200px 15px;
+}
+
+/* modificacion de section nuestros proyectos  */
+#nuestros-proyectos .container{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+    padding: 100px 10px;
+}
+#nuestros-proyectos p{
+    display: none;
+}
+
+#nuestros-proyectos .carta{
+    background-position: center center;
+    background-size:cover;
+    padding: 35px 10px;
+    margin: 15px;
+    border-radius: 30px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../imagenes/scraping.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/escolar\ \(1\).jpg");
+}
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/inicio.jpg");
+}
+/* modificacion de section tegnoligias  */
+#tegnologias .container{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    padding: 100px 10px;
+
+}
+
+#tegnologias .experiencias{
+    display: flex;
+}
+
+#tegnologias .experiencias img{ 
+    
+    background-color: blueviolet;
+    padding: 20px 10px;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+
+}
+
+/* modificacion de section fotter o contactame  */
+
+footer .contactame{
+    background-color: rgba(30,30,30);
+    padding: 40px 10px;
     
 }
-header a.hover{
-    background-color: rgb(143, 24, 24);
+
+footer .contactame a{
+    color: white;
+    padding: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
