@@ -1,0 +1,288 @@
+/* modificaciones de toda la pagina web */
+
+*{
+    font-family:Arial;
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* modificacion de todos los botones de la pagina web */
+/* modificacion de todos los botones de la pagina web */
+button{
+    font-size: 1.3em;  
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 15px 15px;
+    box-shadow: 3px 3px 3px;
+    color:black;
+    background-color:rgb(182, 117, 243);
+}
+
+button:hover{
+    background-color:blueviolet;
+}
+/* modificacion del header o inicio  */
+
+#header{
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+}
+
+.container__video{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+   
+       
+}
+
+.header__container{
+    position: relative;
+   
+   
+    
+}
+.header__nav{
+   
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    position: fixed;
+    width: 100%;
+    
+
+}
+.header__nav__link{
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color:rgb(182, 117, 243);
+}
+
+.header__nav__link:hover{
+    background-color:blueviolet;
+    border-radius: 10px;
+    
+}
+
+.header__titulo{
+    height: 75vh;
+    width: 100%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+
+    
+}
+.header__h1{
+    padding: 50px;
+}
+
+
+
+/* modificacion de section sobre mi */
+.sobre-mi__nombre{ color:rgb(182, 117, 243);}
+
+#sobre-mi {
+    display: flex; 
+    justify-content: center;
+ 
+}
+
+.sobre-mi__img img{
+    padding-bottom: 5vh;
+    padding-top:5vh;
+    padding-left: 10vh;
+    
+    height: 60vh;
+    width: 60vh;
+}
+ .sobre-mi__discrition{
+     padding-top: 20vh;
+     padding-right: 20vh;
+
+ }
+ .sobre-mi__p{
+     padding: 5vh;
+  
+ }
+
+.sobre-mi__h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+     
+
+
+
+/* modificacion de section nuestros proyectos  */
+#proyectos{
+    height: 90vh;
+    width: 100%;
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.proyectos___container{
+    padding: 20mm;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.proyectos__carta{
+    height: 100mm;
+    width: 60mm;
+    background-position: center center;
+    background-size:cover;
+    margin: 15px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.proyectos__title{
+    padding: 10mm;
+}
+.proyectos__h3{
+    padding: 5mm;
+    
+}
+.proyectos__p{
+    padding: 5mm;
+   
+}
+.proyectos__botton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10mm;
+    width: 45mm;
+    margin: auto;
+}
+
+
+
+
+
+.proyectos__carta:first-child{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../imagenes/django2.png");
+}
+
+.proyectos__carta:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/css3.png");
+}
+
+
+.proyectos__carta:nth-child(3){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/inicio.jpg");
+}
+
+
+
+
+/* modificacion de section tegnoligias  */
+
+#tegnologias{
+    height: 70vh;
+    width: 100%;
+}
+.tegnologias__h3 {
+    font-size: 13mm;
+    padding: 10mm;
+    text-align: center;
+
+}
+.tegnologias__1{
+    padding: 10mm 0;
+    display: flex;
+    justify-content:space-around;   
+}
+
+span{
+    text-align: center;
+}
+
+.tegnologias__2{
+    padding: 10mm 0;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.carta__img{ 
+    background-color:rgba(30,30,30);
+    height: 30mm;
+    width: 30mm;
+    align-items: center;
+    border-radius: 7mm;
+    
+    
+
+}
+
+/* modificacion de section  contactame  */
+#contac{
+    background-color: rgba(30,30,30);
+    height: 30vh;
+    width: 100%;
+    align-items: center; 
+    
+
+}
+.contac__container{
+    
+    display: flex;
+    justify-content: space-around;
+    padding:14mm;
+    
+       
+}
+    
+.contac_img{
+    height: 18mm;
+    width: 18mm;
+
+}
+
+.contac__links{
+    padding: 0 40mm;
+}
+
+
+.footer__p{
+    height: 10vh;
+    width: 100%;
+    font-weight: bold;
+    font-size: 10mm;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
