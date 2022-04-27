@@ -12,173 +12,204 @@
     
 
 </head>
+    <body>   
+        <!--esturtura del header - inicio -->
+        <section  id="header">
+            <video  autoplay muted loop  >
+                <source  src="{% static '/first_app/static/first_app/videos/heder.mp4'%}"type="video/mp4"  >
+             </video>
+            <div class="header__container">
+                <nav class="header__nav">
+                    <a href="#header">INICIO</a>
+                    <a href="#sobre-mi">SOBRE MI</a>
+                    <a href="#proyectos">MIS PROYECTOS</a>
+                    <a href="#tegnologias">SKILL</a>
+                    <a href="#contac">CONTACTAME</a>
+                </nav>
 
-<body>
-
-
-    <header  id="header">
-        <video  class="container__video" autoplay muted loop>
-            <source src="{% static '/first_app/static/first_app/videos/heder.mp4'%}"type="video/mp4"  >
-        </video>
-        <div class="header__container"> 
-            <nav class="header__nav">
-                <a class="header__nav__link" href="#header">INICIO</a>
-                <a class="header__nav__link"href="#sobre-mi">SOBRE MI</a>
-                <a class="header__nav__link" href="#proyectos">MIS PROYECTOS</a>
-                <a class="header__nav__link"href="#tegnologias">TECNOLOGIAS</a>
-                <a class="header__nav__link"href="#contac">CONTACTAME</a>
-            </nav>
-
-            <div class="header__titulo">
-                <h1 class="header__h1">Tecnicó en Programación de Sofware<br>Programador Web </h1>
-                <button class="header__botton-cv">DESACARGA MI CV</button>
-            </div>
-
-
-        </div>    
+                <div class="header__titulo">
+                    <h1 >Tecnicó en Programación de Sofware<br>Programador Web </h1>
+                    <button class="button_cv">DESACARGA MI CV</button>
+                </div>
                 
-    </header>
-
-
-
-
-
-
-<section id="sobre-mi">
-    <div class="sobre-mi__img">
-        <img src="{% static 'first_app/imagenes/mia2.jpg' %}">
-    </div>   
-    <div class="sobre-mi__discrition">
-        <h1 class="sobre-mi__h1"> Soy<span class="sobre-mi__nombre"> Brayan Ramirez</span></h1>
-        <p class="sobre-mi__p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquam beatae illum ad incidunt eligendi eaque sint reiciendis amet laudantium expedita provident, cum aliquid sit culpa, sapiente porro ea ex.
-        </p>
-    </div>
-    </div>
-</section>
-
-    <section id="proyectos">
-        <h1 class="proyectos__title"> PROYECTOS DE PROGRAMACION</h1>
-        <div class="proyectos___container">    
-            <div class="proyectos__carta">
-                <h3 class="proyectos__h3">algoritmo de trading</h3>
-                <p class="proyectos__p">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </p>
-                <button class="proyectos__botton">
-                    Git-Hub
-                </button>
             </div>
-            <div class="proyectos__carta">
-                <h3 class="proyectos__h3">control scolar</h3>
-                <p class="proyectos__p">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </p>
-                <button class="proyectos__botton">
-                    Git-Hub
-                </button>
+        </section>
+ <!--esturtura del header - FINAL -->
+
+
+ <!--esturtura section sobre mi  -INICIO -->
+        <section id="sobre-mi">
+            <div class="sobre-mi__container">
+                <div class="sobre-mi__img">
+                    <img src="{% static 'first_app/imagenes/mia2.jpg' %}">
+                </div>   
+                <div class="sobre-mi__discrition">
+                    <h1 class="sobre-mi__h1"> Soy<span class="sobre-mi__nombre"> Brayan Ramirez</span></h1>
+                    <p class="sobre-mi__p">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquam beatae illum ad incidunt eligendi eaque sint reiciendis amet laudantium expedita provident, cum aliquid sit culpa, sapiente porro ea ex.
+                    </p>
+                </div>
             </div>
-                        
-            <div class="proyectos__carta">
-                <h3 class="proyectos__h3">web scraping</h3>
-                <p class="proyectos__p">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </p>
-                <button class="proyectos__botton">
-                    Git-Hub
-                </button>
+        </section>
+<!--esturtura section sobre mi  -FINAL -->
+
+
+<!--esturtura proyectos  INICIO -->
+        <section id="proyectos">
+            <div class="proyectos___container">
+                <h1 class="proyectos__title"> PROYECTOS DE PROGRAMACION</h1> 
+                <div class="proyectos__mazo-1">
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #1</h3>
+                        <p class="proyectos__p">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #2</h3>
+                        <p class="proyectos__p">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>       
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #3</h3>
+                        <p class="proyectos__p">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="proyectos__mazo-2">   
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #4</h3>
+                        <p class="proyectos__p">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #5</h3>
+                        <p class="proyectos__p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>
+                    <div class="proyectos__carta">
+                        <h3 class="proyectos__h3">PROYECTO #6</h3>
+                        <p class="proyectos__p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
+                        </p>
+                        <button class="proyectos__button">
+                            Git-Hub
+                        </button>
+                    </div>
+                </div>    
             </div>
-            <div class="proyectos__carta">
-                <h3 class="proyectos__h3">control scolar</h3>
-                <p class="proyectos__p">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </p>
-                <button class="proyectos__botton">
-                    Git-Hub
-                </button>
+        </section>
+
+<!--esturtura proyectos  FINAL -->        
+
+
+<!--esturtura de tegnologias   INICIO -->
+
+        <section id="tegnologias">
+            <h3 class="tegnologias__h3">SKILL</h3>
+            <div class="tegnologias__container">
+                <div class="tegnologias__1"> 
+                    
+                    <div class="teg__carta">
+                        <h2>PYTHON</h2>
+                       <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div>
+                    <div class="teg__carta" >
+                        <h2></h2>            
+                        <img src="{% static 'first_app/imagenes/css3.png' %}"/>
+                    </div>
+                    <div class="teg__carta"> 
+                        <h2>tegnologia</h2>           
+                        <img src="{% static 'first_app/imagenes/html5.png' %}"/>
+                    </div>
+                    <div class="teg__carta"> 
+                        <h2>tegnologia</h2>           
+                        <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div>
+                </div>
+
+                <div class="tegnologias__2">
+                    
+                    <div class="teg__carta"> 
+                        <h2>tegnologia</h2>          
+                        <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div >
+                   
+                    <div class="teg__carta"> 
+                        <h2>tegnologia</h2>           
+                        <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div>
+                    <div class="teg__carta">
+                        <h2>tegnologia</h2>             
+                        <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div>
+                    <div class="teg__carta">  
+                        <h2>tegnologia</h2>          
+                        <img src="{% static 'first_app/imagenes/python.png' %}"/>
+                    </div>
+                </div>
+            </div>    
+<!--esturtura de tegnologias   FINAL -->
+
+
+<!--esturtura de contacto   INICIO-->     
+
+        </section>
+<!--esturtura de tegnologias   FINAL-->
+
+<!--esturtura de contacto   INICIO--> 
+        <section id="contac">
+            <div class=" contac__container">
+
+                <div class="contac__a">
+                    <a  href="brayanramirez4546@gmail.com">
+                        <img class="contac__img" src="{% static 'first_app/imagenes/gmail.png' %}"/>    
+                    </a>
+                </div>
+
+                <div class="contac__a" >
+                    <a href="https://github.com/Brianramirez27">
+                        <img class="contac__img"src="{% static 'first_app/imagenes/github.png' %}"/>   
+                    </a>
+                </div>
+                <div class="contac__a">
+                    <a href="https://www.linkedin.com/in/brayan-ramirez-09b887216/">
+                        <img class="contac__img"src="{% static 'first_app/imagenes/linkedin.png' %}"/>    
+                    </a> 
+                </div> 
             </div>
-            <div class="proyectos__carta">
-                <h3 class="proyectos__h3">control scolar</h3>
-                <p class="proyectos__p">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad molestiae, dolor voluptate neque suscipit minima quibusdam temporibus fugit rem corporis fugiat, error soluta, libero quam esse aliquam culpa voluptas quidem?
-                </p>
-                <button class="proyectos__botton">
-                     Git-Hub
-                </button>
-            </div>
-        </div>
-    </section>
+        </section>  
+
+<!--esturtura de contacto   FINAL--> 
 
 
+<!--esturtura de footer INICIO -->
 
+        <footer id="footer">
+            <p class="footer__p">&copy;Brayan Ramirez</p>
+        </footer>
+        
+<!--esturtura de footer FINAL -->       
 
-    <section id="tegnologias"> 
-        <h3 class="tegnologias__h3">SKILL</h3>
-
-        <div class="tegnologias__1"> 
-
-            <div class="teg__carta">
-                
-                <img class="carta__img"src= "{% static 'first_app/imagenes/python.png' %}" >
-            </div>
-            <div class="teg__carta" >            
-                <img class="carta__img"src="{% static 'first_app/imagenes/django2.png' %}">
-            </div>
-            <div class="teg__carta">            
-                <img class="carta__img"src="{% static 'first_app/imagenes/html5.png' %}" >
-            </div>
-            <div class="teg__carta">            
-                <img class="carta__img"src="{% static 'first_app/imagenes/css3.png' %}" >
-            </div>
-        </div>
-
-        <div class="tegnologias__2">
-            <div class="teg__carta">            
-                <img class="carta__img"src="{% static 'first_app/imagenes/python.png' %}" >
-            </div >
-            <div class="teg__carta">            
-                <img class="carta__img"src="{% static 'first_app/imagenes/python.png' %}" >
-            </div>
-            <div class="teg__carta">             
-                <img class="carta__img"src="{% static 'first_app/imagenes/python.png' %}" >
-            </div>
-            <div class="teg__carta">            
-                <img class="carta__img"src="{% static 'first_app/imagenes/python.png' %}" >
-            </div>
-        </div>
-                
-               
-    </section>
-
-    <section id="contac">
-        <div class=" contac__container">
-
-            <div class="contac__a">
-                <a class="contac__a" href="brayanramirez4546@gmail.com">
-                    <img class="contac_img"src="{% static 'first_app/imagenes/gmail.png' %}"/>    
-                </a>
-            </div>
-
-            <div class="contac__a" >
-                <a href="https://github.com/Brianramirez27">
-                    <img class="contac_img"src="{% static 'first_app/imagenes/github.png' %}"/>   
-                </a>
-            </div>
-            <div class="contac__a">
-                <a href="https://www.linkedin.com/in/brayan-ramirez-09b887216/">
-                    <img class="contac_img"src="{% static 'first_app/imagenes/linkedin.png' %}"/>    
-                </a> 
-            </div> 
-        </div>
-    </section>
-
-
-
-
-
-    <footer id="footer">
-        <p class="footer__p">&copy;Brayan Ramirez</p>
-    </footer>
- 
-</body>
+    </body>
 </html>

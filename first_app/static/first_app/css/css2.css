@@ -9,280 +9,418 @@
 
 html{
     scroll-behavior: smooth;
+    text-align: center;
 }
-/* modificacion de todos los botones de la pagina web */
-/* modificacion de todos los botones de la pagina web */
+/* modificaciones de  elemntos generales INICIO*/
+
 button{
-    font-size: 1.3em;  
+    font-size: 1rem;  
     font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 15px 15px;
-    box-shadow: 3px 3px 3px;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10rem 10rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem;
     color:black;
-    background-color:rgb(182, 117, 243);
+    background-color:blueviolet;
+    display: inline-flex;
+    transition: all 400ms;
 }
 
 button:hover{
-    background-color:blueviolet;
+    color: white;
 }
-/* modificacion del header o inicio  */
+
+/* modificaciones de  elemntos generales FINAL*/
+
+
+/* modificacion del header  INICIO  */
 
 #header{
     position: relative;
+    align-items: center;
+    width: 100%;
+    height: 35rem;  
     overflow: hidden;
-    height: 90vh;
-    width: 100%;
-}
-
-.container__video{
-    position: absolute;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-   
-       
 }
 
 .header__container{
     position: relative;
-   
-   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+video{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover 
     
 }
 .header__nav{
-   
-    padding: 15px;
-    display: flex;
-    text-align: center;
-    justify-content:space-around;
+    background-color:white;
     position: fixed;
     width: 100%;
-    
-
+    height: 3rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;   
+  
 }
-.header__nav__link{
+
+.header__nav a{
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
-    color:rgb(182, 117, 243);
+    border-radius: 2rem;
+    color:blueviolet;
 }
 
-.header__nav__link:hover{
-    background-color:blueviolet;
-    border-radius: 10px;
+.header__nav a:hover{
+    color: black;
+    font-size:1rem;
+    border-radius: 5rem;
+    transition: all 300ms;
     
 }
 
 .header__titulo{
-    height: 75vh;
-    width: 100%;
-    color:white;
-    display:flex;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center ;
-
+    width: 100%;
+    height: 100%;
     
 }
-.header__h1{
-    padding: 50px;
+.header__titulo h1{
+    padding: 2rem;
+    transition: all 400ms;
 }
 
+.header__titulo h1:hover{
+    font-size: 2.2rem;
+}
+
+.header__titulo button{
+    font-size: 1rem;
+    padding:0.5  1.5rem ;  
+}
+
+/* modificacion del header  FINAL  */
 
 
-/* modificacion de section sobre mi */
-.sobre-mi__nombre{ color:rgb(182, 117, 243);}
+/* modificacion de section sobre mi INICIO */
+
+.sobre-mi__nombre{ color:blueviolet;}
 
 #sobre-mi {
-    display: flex; 
+    width: 100%;
+    height: 50rem;
+    display: flex;
     justify-content: center;
- 
+    overflow: hidden;
+}
+
+.sobre-mi__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.sobre-mi__img{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    overflow: hidden;
+
+
 }
 
 .sobre-mi__img img{
-    padding-bottom: 5vh;
-    padding-top:5vh;
-    padding-left: 10vh;
-    
-    height: 60vh;
-    width: 60vh;
-}
- .sobre-mi__discrition{
-     padding-top: 20vh;
-     padding-right: 20vh;
-
- }
- .sobre-mi__p{
-     padding: 5vh;
-  
- }
-
-.sobre-mi__h1{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-     
-
-
-
-/* modificacion de section nuestros proyectos  */
-#proyectos{
-    height: 90vh;
-    width: 100%;
-    background-color: rgba(30,30,30);
-    color: white;
-    text-align: center;
-    justify-content: center;
-}
-
-.proyectos___container{
-    padding: 20mm;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.proyectos__carta{
-    height: 100mm;
-    width: 60mm;
-    background-position: center center;
-    background-size:cover;
-    margin: 15px;
-    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    margin:auto;
+    width: 20rem;
+    height:25rem;
+    border: 1rem blueviolet solid;
 }
+ .sobre-mi__discrition{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: auto;
+     width: 50%;
+     height: 100%;   
+     overflow: hidden;
+     margin-right: 4rem;
+ }
+ 
+ .sobre-mi__p{
+     margin-top: 2rem; 
+ }
 
-.proyectos__title{
-    padding: 10mm;
-}
-.proyectos__h3{
-    padding: 5mm;
-    
-}
-.proyectos__p{
-    padding: 5mm;
-   
-}
-.proyectos__botton{
+/* modificacion de section sobre mi FINAL */
+
+ /* modificacion de section nuestros proyectos  INICIO */
+#proyectos{
+    width: 100%;
+    height: 50rem;
+    background-color: rgba(30,30,30);
+    color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 10mm;
-    width: 45mm;
+    overflow: hidden;
+    
+}
+.proyectos___container{
+    width:100%;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.proyectos__mazo-1{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;  
+    
+}
+
+.proyectos__carta{
+    overflow: hidden;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    border:blueviolet 0.6rem solid;
+    height:19rem ;
+    width: 13rem;   
+    
+}
+.proyectos__carta:hover{
+    
+    border: white 0.6rem solid;
+    background-color: blueviolet;   
+}
+
+
+.proyectos__mazo-2{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around;
+      
+}
+
+.proyectos__title {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    
+}
+.proyectos__h3{
+    color: black;
+    font-size: 1rem;
+    padding: 0.8rem;
+
+}
+
+.proyectos__carta:hover .proyectos__h3{
+    animation: proyectos__h3 400ms  linear ;
+    
+}
+
+@keyframes proyectos__h3{
+
+    from{
+        transform: translatey(-200%);
+    }
+
+    to{
+        transform: translatey(0%);
+    }
+}
+
+
+.proyectos__p{
+    color: black;
+    padding: 1rem;
+    font-size: 0.8rem;
+    
+}
+
+
+.proyectos__carta:hover .proyectos__p{
+    animation: proyectos__p 400ms linear;
+
+}
+
+
+@keyframes proyectos__p{
+    from{
+        transform: translatey(-400%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+
 }
 
 
 
-
-
-.proyectos__carta:first-child{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../imagenes/django2.png");
-}
-
-.proyectos__carta:nth-child(2){
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/css3.png");
+.proyectos__carta:hover .proyectos__button{
+    color: black;
+    background-color: aliceblue;
+    animation: proyectos__button 400ms linear
 }
 
 
-.proyectos__carta:nth-child(3){
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//imagenes/inicio.jpg");
+@keyframes proyectos__button{
+
+    from{
+        transform: translateX(-400%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
+/* modificacion de section nuestros proyectos  FINAL*/
 
 
-
-/* modificacion de section tegnoligias  */
+/* modificacion de section tegnoligias  INICIO*/
 
 #tegnologias{
-    height: 70vh;
     width: 100%;
+    height: 50rem;
+   
 }
-.tegnologias__h3 {
-    font-size: 13mm;
-    padding: 10mm;
-    text-align: center;
-
-}
-.tegnologias__1{
-    padding: 10mm 0;
+.tegnologias__container{
+    width: 100%;
+    height: 80%;
     display: flex;
-    justify-content:space-around;   
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    
+    
 }
 
-span{
-    text-align: center;
+.tegnologias__h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+
+.tegnologias__1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+      
 }
 
 .tegnologias__2{
-    padding: 10mm 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
-    
-
-}
-
-.carta__img{ 
-    background-color:rgba(30,30,30);
-    height: 30mm;
-    width: 30mm;
     align-items: center;
-    border-radius: 7mm;
-    
-    
-
-}
-
-/* modificacion de section  contactame  */
-#contac{
-    background-color: rgba(30,30,30);
-    height: 30vh;
-    width: 100%;
-    align-items: center; 
-    
-
-}
-.contac__container{
-    
-    display: flex;
     justify-content: space-around;
-    padding:14mm;
     
-       
-}
-    
-.contac_img{
-    height: 18mm;
-    width: 18mm;
-
 }
 
-.contac__links{
-    padding: 0 40mm;
-}
-
-
-.footer__p{
-    height: 10vh;
-    width: 100%;
-    font-weight: bold;
-    font-size: 10mm;
+.teg__carta{
+    background-color: rgba(30,30,30);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content:center;
+    transition: all 400ms;
+}
+.teg__carta:hover{
+    background-color:white;
 }
 
 
+.teg__carta h2{
+    position:absolute;
+    display: none;
+    transition: all 400ms;
+    
+    
+}
+.teg__carta:hover h2{
+    display:flex;
+    font-weight: bold;
+    padding-bottom: 10rem;
+    padding-left: 1rem;
 
+    
+    
+    
+}
+ /* modificacion de section contac INICIO*/ 
+#contac{
+    width: 100%;
+    height: 16rem;
+}
 
+.contac__container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    overflow: hidden;
+}
+.contac__a{
+    width: 7rem;
+    height: 7rem;
+   
+}
+.contac__a img{
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+}
+.contac__a img:hover{
+    width: 6rem;
+    height: 6rem;
+
+}
+/* modificacion de section contac FINAL*/ 
+
+/* modificacion de section footer  INICIO*/
+
+#footer{
+    width:100%;
+    height: 5rem;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.footer__p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* modificacion de section footer  FINAL*/
